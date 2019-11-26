@@ -7,13 +7,13 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
-  "homepage": "http://epsooraj.github.io/",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "production": "react-scripts build && copyfiles ./build/*.* ../"
+    "production": "react-scripts build && cp ./build/ ../ -r"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "copy-dir": "^1.2.0",
     "copyfiles": "^2.1.1"
   }
 }
