@@ -1,12 +1,23 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+import home from "./views/home";
 
 function App() {
-  return (
-    <div>
-      <h1>Ep Sooraj</h1>
-    </div>
-  );
+	return (
+		<Provider store={store}>
+			<Router>
+				{/* Add nav which will be in every page */}
+				<Switch>
+					<Route exact path="/">
+						{home}
+					</Route>
+				</Switch>
+			</Router>
+		</Provider>
+	);
 }
 
 export default App;
