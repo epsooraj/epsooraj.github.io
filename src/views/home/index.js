@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Navbar /> */}
+        <Navbar />
         <NameTitle />
         {/* <MDBBtn gradient='peach'>Test</MDBBtn> */}
       </React.Fragment>
