@@ -1,0 +1,14 @@
+body {
+  background-color: #136b99;
+  color: #fff;
+}
+
+.display-3 {
+  font-family: 'Snowballs';
+  font-size: 10em;
+}
+
+.navbar {
+  background-color: white;
+  color: black !important;
+}
