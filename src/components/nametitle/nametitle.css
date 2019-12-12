@@ -1,5 +1,13 @@
 .nametitle {
-  margin-top: 24vh;
   margin-left: 0px !important;
   margin-right: 0px !important;
+  height: 100vh !important;
+}
+
+.brand {
+  margin-top: 24vh;
+}
+
+.desc {
+  font-family: Karla;
 }
