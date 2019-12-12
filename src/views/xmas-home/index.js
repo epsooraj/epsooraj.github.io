@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './home.css';
-import Navbar from '../../components/navbar';
 import NameTitle from '../../components/nametitle';
 import SeriesSet from '../../components/series-set';
-import RotatingXmasTree from '../../components/xmas-tree';
+import Experience from '../../components/sections/experience';
+import Contact from '../../components/sections/contact';
 import { MDBBtn } from 'mdbreact';
 
 class Home extends Component {
@@ -12,7 +12,8 @@ class Home extends Component {
       <React.Fragment>
         <SeriesSet />
         <NameTitle />
-        {/* <RotatingXmasTree /> */}
+        <Experience />
+        <Contact />
       </React.Fragment>
     );
   }
