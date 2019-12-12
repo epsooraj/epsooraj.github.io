@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700|Space+Mono&display=swap');
+
 body {
-  background-color: #171614;
-  color: #fff;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Snowballs Font */
+@font-face {
+  font-family: 'Snowballs';
+  src: url('assets/fonts/Snowballs/Snowballs.ttf');
+}
+/* #END Snowballs Font */
