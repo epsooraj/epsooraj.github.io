@@ -1,24 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700|Space+Mono&display=swap');
+
 @font-face {
   font-family: 'Great Vibes';
-  font-style: normal;
+  font-style : normal;
   font-weight: 400;
-  src: local('Great Vibes'), local('GreatVibes-Regular'),
-    url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XFiaE.ttf)
-      format('truetype');
+  src        : local('Great Vibes'), local('GreatVibes-Regular'),
+    url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XFiaE.ttf) format('truetype');
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+  margin                 : 0px;
+  padding                : 0px;
+  overflow-x             : hidden;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Snowballs Font */
-@font-face {
-  font-family: 'Snowballs';
-  src: url('assets/fonts/Snowballs/Snowballs.ttf');
-}
-/* #END Snowballs Font */
