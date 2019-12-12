@@ -5,7 +5,7 @@ class SeriesSet extends Component {
   render() {
     return (
       <div>
-        <ul class='lightrope'>
+        <ul className='lightrope'>
           <li></li>
           <li></li>
           <li></li>
