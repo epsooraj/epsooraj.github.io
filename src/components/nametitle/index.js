@@ -7,8 +7,8 @@ export default class NameTitle extends Component {
     return (
       <MDBRow className='nametitle'>
         <MDBCol>
-          <h2 className='display-3 text-center'>Ep Sooraj</h2>
-          <p className='lead text-center'>
+          <h2 className='display-3 text-center brand glitch'>Ep Sooraj</h2>
+          <p className='lead text-center desc'>
             Machine Learning Enthusiast | Backend Web Developer
           </p>
         </MDBCol>
