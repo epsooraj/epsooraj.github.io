@@ -15,9 +15,9 @@ import './navbar.css';
 class Navbar extends Component {
   render() {
     return (
-      <MDBNavbar color='#171614' dark expand>
+      <MDBNavbar light expand>
         <MDBNavbarBrand>
-          <strong className='white-text'>Ep Sooraj</strong>
+          <strong>Ep Sooraj</strong>
         </MDBNavbarBrand>
         <MDBCollapse navbar>
           <MDBNavbarNav right>
