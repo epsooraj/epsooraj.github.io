@@ -12,7 +12,7 @@ class Home extends Component {
       <React.Fragment>
         <SeriesSet />
         <NameTitle />
-        <RotatingXmasTree />
+        {/* <RotatingXmasTree /> */}
       </React.Fragment>
     );
   }
