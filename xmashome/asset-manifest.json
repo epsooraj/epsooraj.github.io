@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd4deec9.chunk.css",
-    "main.js": "/static/js/main.32cd381b.chunk.js",
-    "main.js.map": "/static/js/main.32cd381b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e8475bc3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e8475bc3.js.map",
-    "static/css/2.7812a17f.chunk.css": "/static/css/2.7812a17f.chunk.css",
-    "static/js/2.27a7b43f.chunk.js": "/static/js/2.27a7b43f.chunk.js",
-    "static/js/2.27a7b43f.chunk.js.map": "/static/js/2.27a7b43f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e3ccdfd823cbdb7ff51f4f633ea7ddb8.js": "/precache-manifest.e3ccdfd823cbdb7ff51f4f633ea7ddb8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.7812a17f.chunk.css.map": "/static/css/2.7812a17f.chunk.css.map",
-    "static/css/main.dd4deec9.chunk.css.map": "/static/css/main.dd4deec9.chunk.css.map",
-    "static/js/2.27a7b43f.chunk.js.LICENSE.txt": "/static/js/2.27a7b43f.chunk.js.LICENSE.txt",
-    "static/media/xmas-fonts.css": "/static/media/Snowballs.a1aa4598.ttf",
-    "static/media/mdb.css": "/static/media/arrow_right.8ef6a08c.svg",
-    "static/media/all.min.css": "/static/media/fa-solid-900.cdfec5cf.woff"
+    "main.css": "/xmashome/static/css/main.e8914b55.chunk.css",
+    "main.js": "/xmashome/static/js/main.8db7010b.chunk.js",
+    "main.js.map": "/xmashome/static/js/main.8db7010b.chunk.js.map",
+    "runtime-main.js": "/xmashome/static/js/runtime-main.8442d390.js",
+    "runtime-main.js.map": "/xmashome/static/js/runtime-main.8442d390.js.map",
+    "static/css/2.e6880b47.chunk.css": "/xmashome/static/css/2.e6880b47.chunk.css",
+    "static/js/2.27a7b43f.chunk.js": "/xmashome/static/js/2.27a7b43f.chunk.js",
+    "static/js/2.27a7b43f.chunk.js.map": "/xmashome/static/js/2.27a7b43f.chunk.js.map",
+    "index.html": "/xmashome/index.html",
+    "precache-manifest.bd7e866b76f04c3fe1472a25ab2708f3.js": "/xmashome/precache-manifest.bd7e866b76f04c3fe1472a25ab2708f3.js",
+    "service-worker.js": "/xmashome/service-worker.js",
+    "static/css/2.e6880b47.chunk.css.map": "/xmashome/static/css/2.e6880b47.chunk.css.map",
+    "static/css/main.e8914b55.chunk.css.map": "/xmashome/static/css/main.e8914b55.chunk.css.map",
+    "static/js/2.27a7b43f.chunk.js.LICENSE.txt": "/xmashome/static/js/2.27a7b43f.chunk.js.LICENSE.txt",
+    "static/media/xmas-fonts.css": "/xmashome/static/media/Snowballs.a1aa4598.ttf",
+    "static/media/mdb.css": "/xmashome/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/xmashome/static/media/fa-solid-900.cdfec5cf.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8475bc3.js",
-    "static/css/2.7812a17f.chunk.css",
+    "static/js/runtime-main.8442d390.js",
+    "static/css/2.e6880b47.chunk.css",
     "static/js/2.27a7b43f.chunk.js",
-    "static/css/main.dd4deec9.chunk.css",
-    "static/js/main.32cd381b.chunk.js"
+    "static/css/main.e8914b55.chunk.css",
+    "static/js/main.8db7010b.chunk.js"
   ]
 }
