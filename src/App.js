@@ -12,6 +12,7 @@ function App() {
         {/* Add nav which will be in every page */}
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/xmashome' component={Home} />
         </Switch>
       </Router>
     </Provider>
