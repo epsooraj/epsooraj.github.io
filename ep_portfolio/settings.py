@@ -16,20 +16,25 @@ try:
 except:
     pass
 import urllib.parse as up
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+env_file = os.path.join(BASE_DIR, '.env')
+if os.path.exists(env_file):
+    load_dotenv(env_file)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'bmih&i%slz^uh#6&tjtunp2cmp-8ppy8txh6pd1+3j^z=ai2f1'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG") == "on"
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'ep_portfolio.herokuapp.com']
 
