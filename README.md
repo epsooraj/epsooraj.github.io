@@ -12,6 +12,7 @@ Serves json data of
 ### Hosting
 
 Application is hosted in [Heroku](https://heroku.com/)
+
 Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 
 
@@ -19,5 +20,6 @@ Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 
 ### Technology
 
-Django
-Django Rest Framework
+[Django](https://www.djangoproject.com/)
+
+[Django Rest Framework](https://www.django-rest-framework.org/)
