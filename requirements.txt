@@ -6,3 +6,4 @@ psycopg2==2.8.4
 whitenoise==5.0.1
 python-dotenv==0.11.0
 djangorestframework==3.11.0
+django-archive==0.1.6
