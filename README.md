@@ -11,11 +11,11 @@ Serves json data of
 
 ### Hosting
 
-Application is hosted in Heroku
-Database is hosted using Heroku [Postgres](https://www.heroku.com/postgres)
+Application is hosted in [Heroku](https://heroku.com/)
+Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 
 
-https://ep-portfolio-api.herokuapp.com/api/v1/
+### https://ep-portfolio-api.herokuapp.com/api/v1/
 
 ### Technology
 
