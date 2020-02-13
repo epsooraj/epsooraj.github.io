@@ -65,7 +65,7 @@ class Portfolio(models.Model):
 	languages = models.ManyToManyField(Language)
 	technology = models.ManyToManyField(Technology)
 	description = models.TextField(null=True, blank=True)
-	priority = models.IntegerField()
+	priority = models.IntegerField(null=True)
 
 	def __str__(self):
 		return self.title
