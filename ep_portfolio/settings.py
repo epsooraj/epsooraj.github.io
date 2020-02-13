@@ -88,6 +88,8 @@ WSGI_APPLICATION = 'ep_portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
+# Connection for Elephant Postgres cloud
 # up.uses_netloc.append("postgres")
 # url = up.urlparse(os.environ["ELEPHANT_DATABASE_URL"])
 # DATABASES = {
@@ -101,8 +103,8 @@ WSGI_APPLICATION = 'ep_portfolio.wsgi.application'
 #     }
 # }
 
+# Connection for Heroku Postgres
 DATABASES = {}
-print("---------------", dj_database_url.config(conn_max_age=600))
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # Password validation
