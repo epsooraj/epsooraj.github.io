@@ -11,6 +11,13 @@ Serves json data of
 
 ### Hosting
 
-Hosted in heroku
+Application is hosted in Heroku
+Database is hosted using Heroku (Postgres)[https://www.heroku.com/postgres]
+
 
 https://ep-portfolio-api.herokuapp.com/api/v1/
+
+### Technology
+
+Django
+Django Rest Framework
