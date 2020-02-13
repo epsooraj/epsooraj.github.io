@@ -7,8 +7,8 @@ class Experience(models.Model):
 	company = models.CharField(max_length=100)
 	location = models.CharField(max_length=100)
 	start_date = models.DateField()
-	end_date = models.DateField(null=True)
-	description = models.TextField(null=True, blank=True)
+	end_date = models.DateField(null=True, blank=True)
+	description = models.TextField(null=True)
 
 	def __str__(self):
 		return self.title
