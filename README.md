@@ -1,6 +1,6 @@
 # API
 
-API built with django rest framework.
+API built with django rest framework and postgres
 
 ### API Functionality
 Serves json data of
