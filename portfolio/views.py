@@ -4,12 +4,12 @@ from . import models
 from . import serializers
 
 class ExperienceViewset(viewsets.ModelViewSet):
-	queryset = models.Experience.objects.all()
+	queryset = models.Experience.objects.all().order_by('-start_date')
 	serializer_class = serializers.ExperienceSerializer
 	http_method_names = ['get']
 
 class EducationViewset(viewsets.ModelViewSet):
-	queryset = models.Education.objects.all()
+	queryset = models.Education.objects.all().order_by('-start_date')
 	serializer_class = serializers.EducationSerializer
 	http_method_names = ['get']
 
@@ -19,6 +19,6 @@ class SkillViewset(viewsets.ModelViewSet):
 	http_method_names = ['get']
 
 class PortfolioViewset(viewsets.ModelViewSet):
-	queryset = models.Portfolio.objects.all()
+	queryset = models.Portfolio.objects.all().order_by('priority')
 	serializer_class = serializers.PortfolioSerializer
 	http_method_names = ['get']

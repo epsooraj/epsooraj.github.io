@@ -44,4 +44,4 @@ class PortfolioSerializer(serializers.ModelSerializer):
 	
 	class Meta:
 		model = models.Portfolio
-		fields = ('id', 'title', 'portfolio_type', 'languages', 'technology', 'description')
+		fields = ('id', 'title', 'portfolio_type', 'languages', 'technology', 'description', 'priority')
