@@ -13,4 +13,4 @@ Serves json data of
 
 Hosted in heroku
 
-[https://ep-portfolio-api.herokuapp.com/api/v1/]
+https://ep-portfolio-api.herokuapp.com/api/v1/
