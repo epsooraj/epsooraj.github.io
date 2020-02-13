@@ -15,10 +15,10 @@ Application is hosted in [Heroku](https://heroku.com/)
 
 Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 
-
+## API Link
 ### https://ep-portfolio-api.herokuapp.com/api/v1/
 
-### Technology
+## Technology
 
 [Django](https://www.djangoproject.com/)
 
