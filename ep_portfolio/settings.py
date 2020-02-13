@@ -17,6 +17,7 @@ except:
     pass
 import urllib.parse as up
 from dotenv import load_dotenv
+import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -87,19 +88,22 @@ WSGI_APPLICATION = 'ep_portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-up.uses_netloc.append("postgres")
-url = up.urlparse(os.environ["DATABASE_URL"])
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tphdwuee',
-        'USER': url.username,
-        'PASSWORD': url.password,
-        'HOST': url.hostname,
-        'PORT': url.port,
-    }
-}
+# up.uses_netloc.append("postgres")
+# url = up.urlparse(os.environ["ELEPHANT_DATABASE_URL"])
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'tphdwuee',
+#         'USER': url.username,
+#         'PASSWORD': url.password,
+#         'HOST': url.hostname,
+#         'PORT': url.port,
+#     }
+# }
 
+DATABASES = {}
+print("---------------", dj_database_url.config(conn_max_age=600))
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
