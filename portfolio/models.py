@@ -29,7 +29,10 @@ class Skill(models.Model):
 	]
 	skill = models.CharField(max_length=100)
 	rating = models.IntegerField()
-	skill_type = models.CharField(max_length=2, choices=sktypes, default='LN')
+	skill_type = models.CharField(
+								max_length=2,
+								choices=sktypes,
+								default='LN')
 
 	def __str__(self):
 		return self.skill
@@ -54,7 +57,11 @@ class PortfolioType(models.Model):
 
 class Portfolio(models.Model):
 	title = models.CharField(max_length=100)
-	portfolio_type = models.ForeignKey(PortfolioType, blank=True, null=True, on_delete=models.SET_NULL)
+	portfolio_type = models.ForeignKey(
+										PortfolioType,
+										blank=True,
+										null=True,
+										on_delete=models.SET_NULL)
 	languages = models.ManyToManyField(Language)
 	technology = models.ManyToManyField(Technology)
 	description = models.TextField(null=True)
