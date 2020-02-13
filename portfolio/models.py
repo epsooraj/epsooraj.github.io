@@ -8,7 +8,7 @@ class Experience(models.Model):
 	location = models.CharField(max_length=100)
 	start_date = models.DateField()
 	end_date = models.DateField(null=True, blank=True)
-	description = models.TextField(null=True)
+	description = models.TextField(null=True, blank=True)
 
 	def __str__(self):
 		return self.title
@@ -64,7 +64,7 @@ class Portfolio(models.Model):
 										on_delete=models.SET_NULL)
 	languages = models.ManyToManyField(Language)
 	technology = models.ManyToManyField(Technology)
-	description = models.TextField(null=True)
+	description = models.TextField(null=True, blank=True)
 
 	def __str__(self):
 		return self.title
