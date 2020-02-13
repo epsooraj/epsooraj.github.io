@@ -19,6 +19,6 @@ class SkillViewset(viewsets.ModelViewSet):
 	http_method_names = ['get']
 
 class PortfolioViewset(viewsets.ModelViewSet):
-	queryset = models.Portfolio.objects.all().order_by('priority')
+	queryset = models.Portfolio.objects.all().order_by('portfolio_type', 'priority')
 	serializer_class = serializers.PortfolioSerializer
 	http_method_names = ['get']
