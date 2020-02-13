@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Experience, Education, Skill, Language, Portfolio, Language, Technology, PortfolioType
+from . import models
 
 # Register your models here.
 class ExperienceAdmin(admin.ModelAdmin):
@@ -8,14 +8,14 @@ class ExperienceAdmin(admin.ModelAdmin):
 	ordering = ('start_date',)
 	search_fields = ('title', 'company', 'location')
 
-admin.site.register(Experience, ExperienceAdmin)
+admin.site.register(models.Experience, ExperienceAdmin)
 
 class SkillAdmin(admin.ModelAdmin):
 	list_display = ('skill', 'rating', 'skill_type')
 	ordering = ('rating',)
 	search_fields = ('skill',)
 
-admin.site.register(Skill, SkillAdmin)
+admin.site.register(models.Skill, SkillAdmin)
 
 class EducationAdmin(admin.ModelAdmin):
 	fields = ('degree', 'college', ('start_date', 'end_date'))
@@ -23,15 +23,15 @@ class EducationAdmin(admin.ModelAdmin):
 	ordering = ('start_date',)
 	search_fields = ('degree', 'college')
 
-admin.site.register(Education, EducationAdmin)
+admin.site.register(models.Education, EducationAdmin)
 
 class PortfolioAdmin(admin.ModelAdmin):
 		list_display = ('title', 'portfolio_type')
 		ordering = ('title',)
 		search_fields = ('title', 'language', 'technology')
 
-admin.site.register(Portfolio, PortfolioAdmin)
+admin.site.register(models.Portfolio, PortfolioAdmin)
 
-admin.site.register(Language)
-admin.site.register(Technology)
-admin.site.register(PortfolioType)
+admin.site.register(models.Language)
+admin.site.register(models.Technology)
+admin.site.register(models.PortfolioType)
