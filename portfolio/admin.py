@@ -26,8 +26,8 @@ class EducationAdmin(admin.ModelAdmin):
 admin.site.register(models.Education, EducationAdmin)
 
 class PortfolioAdmin(admin.ModelAdmin):
-		list_display = ('title', 'portfolio_type')
-		ordering = ('title',)
+		list_display = ('title', 'portfolio_type', 'priority')
+		ordering = ('portfolio_type','priority')
 		search_fields = ('title', 'language', 'technology')
 
 admin.site.register(models.Portfolio, PortfolioAdmin)
