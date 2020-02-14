@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'portfolio',
     'django_archive',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +65,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'ep_portfolio.urls'
 
