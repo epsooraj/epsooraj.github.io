@@ -12,7 +12,7 @@ admin.site.register(models.Experience, ExperienceAdmin)
 
 class SkillAdmin(admin.ModelAdmin):
 	list_display = ('skill', 'rating', 'skill_type')
-	ordering = ('rating','skill_type')
+	ordering = ('-rating','skill_type')
 	search_fields = ('skill',)
 
 admin.site.register(models.Skill, SkillAdmin)
