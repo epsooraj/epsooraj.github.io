@@ -19,21 +19,51 @@
 		<link href="assets/plugins/themify/themify-icons.min.css" rel="stylesheet">
 	</head>
 	<body data-preloader="2">
+		<!-- Get hired for freelance -->
+		<!-- <div class="purchasenow">
+			<a class="button-circle button-circle-sm button-circle-dark" href="https://themeforest.net/item/mono-creative-multipurpose-template/21490319" target="_blank"><i class="ti-shopping-cart"></i></a>
+		</div> -->
+		<!-- END Get hired for freelance -->
+
 		<header>
 			<nav class="navbar navbar-absolute">
-				<div class="container">
+				<div class="container-fluid">
 					<a class="navbar-brand" href="/">
 						<h5>Ep Sooraj</h5>
 					</a>
-				</div>
-			</nav>
-		</header>
-		<!-- Scroll to top button -->
-		<div class="scrolltotop">
-			<a class="button-circle button-circle-sm button-circle-dark" href="#"><i class="ti-arrow-up"></i></a>
-		</div>
-		<!-- end Scroll to top button -->
-		<!-- Home section -->
+					<!-- Toggle button of Fullscreen menu -->
+					<button class="fullscreen-toggle-btn">
+			            <span class="lines"></span>
+			        </button>
+				</div><!-- end container-fluid -->
+			</nav><!-- end navbar -->
+			
+			<div class="fullscreen-menu bg-light">
+				<div class="fullscreen-menu-wrapper text-center">
+					<div class="position-top">
+						<h3>Ep Sooraj</h3>
+					</div>
+					<div class="position-middle">
+						<ul class="list-horizontal-unstyled">
+							<li><h2><a class="hyperlink-7" href="#experience" onclick="close_fullscreen_menu();">Experience</a></h2></li>
+							<li><h2><a class="hyperlink-7" href="#skills" onclick="close_fullscreen_menu();">Skills</a></h2></li>
+							<li><h2><a class="hyperlink-7" href="#portfolio" onclick="close_fullscreen_menu();">Portfolio</a></h2></li>
+							<li><h2><a class="hyperlink-7" href="#educatoin" onclick="close_fullscreen_menu();">Education</a></h2></li>
+							<li><h2><a class="hyperlink-7" href="#contact" onclick="close_fullscreen_menu();">Contact</a></h2></li>
+						</ul>
+					</div>
+					<div class="position-bottom">
+						<ul class="list-horizontal-unstyled icon-sm">
+							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-white" href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-white" href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-white" href="#"><i class="fab fa-pinterest"></i></a></li>
+							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-white" href="#"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- end fullscreen-menu-wrapper -->
+			</div><!-- end fullscreen-menu -->
+
+			<!-- Home section -->
 		<div class="section-2xl bg-image parallax" style="background-image: url(assets/images/agency-classic-bg.jpg)">
 			<div class="bg-black-06">
 				<div class="container">
@@ -42,12 +72,20 @@
 							<h1 class="display-4 font-weight-bold margin-0">Let me bring your <br>Imaginations to Life.</h1>
 						</div>
 					</div>
-					<!-- end row -->
+					<!-- END row -->
 				</div>
-				<!-- end container -->
+				<!-- END container -->
 			</div>
 		</div>
-		<!-- end Home section -->
+		<!-- END Home section -->
+		</header>
+
+		<!-- Scroll to top button -->
+		<div class="scrolltotop">
+			<a class="button-circle button-circle-sm button-circle-dark" href="#"><i class="ti-arrow-up"></i></a>
+		</div>
+		<!-- END Scroll to top button -->
+
 		<!-- Experience Section -->
 		<div id="experience" class="section">
 			<div class="container">
@@ -64,24 +102,20 @@
 							<h6>Heading</h6>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 						</div>
-					</div> -->
-
+						</div> -->
 				</div>
-				<!-- end timeline-wrapper -->
+				<!-- END timeline-wrapper -->
 			</div>
-			<!-- end row -->
+			<!-- END row -->
 		</div>
-		<!-- End Experience Section -->
-
+		<!-- END Experience Section -->
 		<hr class="bg-black-01">
-
 		<!-- Skills Section -->
 		<div id="skills" class="section">
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>I know</h2>
 				</div>
-
 				<div id="skill_progress" class="row">
 					<!-- <div class="col-12 col-md-6">
 						<div class="progress-box">
@@ -92,20 +126,17 @@
 								</div>
 							</div>
 						</div>
-					</div> -->
-
+						</div> -->
 				</div>
 			</div>
-			<!-- end row -->
+			<!-- END row -->
 		</div>
-		<!-- end container -->
+		<!-- END container -->
 		</div>
-		<!-- End Skills Section -->
-
+		<!-- END Skills Section -->
 		<hr class="bg-black-01">
-
 		<!-- What I do section -->
-		<div id="whatido" class="section">
+		<div  id="portfolio" class="section">
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>What I do</h2>
@@ -123,75 +154,57 @@
 					</div>
 					<!-- Process item 3 -->
 				</div>
-				<!-- end row -->
+				<!-- END row -->
 			</div>
-			<!-- end container -->
+			<!-- END container -->
 		</div>
-		<!-- end What I Do section -->
-
+		<!-- END What I Do section -->
 		<hr class="bg-black-01">
-
 		<!-- Portfolio section -->
-		<div id="portfolio" class="section">
+		<div class="section">
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>What I did</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Integer tincidunt.</p>
 				</div>
-				<div>
-					<div class="text-center margin-bottom-30">
+
+				<div id="portfolio_main">
+
+					<!-- <div class="text-center margin-bottom-30">
 						<h4>Web Based Projects</h4>
 					</div>
-					<div class="masonry masonry-column-3 masonry-spacing-30">
-						<!-- Masonry Item 1 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<div class="text-center">
-									<h4 class="font-weight-light text-dark text-center">Pro1</h4>
-								</div>
-								<p>Lorem ipsum dolor sit amet...</p>
+
+					<div id="portfolio_item_" class="row">
+
+						<div class="col-12 col-md-6">
+							<div class="padding-30 border-all border-radius box-shadow-with-hover hover-scale">
+								<h3 class="font-weight-light text-dark text-center">Scale on Hover</h3>
+								<p class="font-weight-semi-bold text-center">Python, Javascript, PHP</p>
+								<p class="font-weight-semi-bold text-center">Django, Selenium</p>
+								<br>
+								<p class="font-weight-light text-center">Description ...</p>
 							</div>
 						</div>
-						<!-- Masonry Item 2 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<p>Lorem ipsum dolor sit amet...</p>
-							</div>
-						</div>
-						<!-- Masonry Item 3 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<p>Lorem ipsum dolor sit amet...</p>
-							</div>
-						</div>
-						<!-- Masonry Item 4 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<p>Lorem ipsum dolor sit amet...</p>
-							</div>
-						</div>
-						<!-- Masonry Item 5 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<p>Lorem ipsum dolor sit amet...</p>
-							</div>
-						</div>
-						<!-- Masonry Item 6 -->
-						<div class="masonry-item">
-							<div class="bg-white padding-40 box-shadow-with-hover">
-								<p>Lorem ipsum dolor sit amet...</p>
-							</div>
-						</div>
-					</div>
+
+					</div> -->
+
 				</div>
-				<!-- end row/portfolio-wrapper -->
+				<!-- END row/portfolio-wrapper -->
 			</div>
-			<!-- end container -->
+			<!-- END container -->
 		</div>
-		<!-- end Portfolio section -->
-
+		<!-- END Portfolio section -->
 		<hr class="bg-black-01">
-
+		<!-- Education Section -->
+		<div id="educatoin" class="section">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>I went to</h2>
+					<p>Edu</p>
+				</div>
+			</div>
+		</div>
+		<!-- END Education Section -->
+		<hr class="bg-black-01">
 		<footer>
 			<div id="contact" class="footer">
 				<div class="container">
@@ -202,7 +215,7 @@
 						<div class="col-12 text-center">
 							<ul class="list-horizontal-unstyled">
 								<li><a href="mailto:epsooraj4@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a></li>
-								<li><a href="https://api.whatsapp.com/send?phone=9895985615" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+								<li><a href="https://api.whatsapp.com/sEND?phone=9895985615" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
 								<li><a href="tel:+916282442482" target="_blank"><i class="fas fa-voicemail fa-lg"></i></a></li>
 								<li><a href="https://www.linkedin.com/in/epsooraj/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
 								<li><a href="https://twitter.com/ep_sooraj" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
@@ -211,11 +224,11 @@
 							</ul>
 						</div>
 					</div>
-					<!-- end row(1) -->
+					<!-- END row(1) -->
 				</div>
-				<!-- end container -->
+				<!-- END container -->
 			</div>
-			<!-- end footer -->
+			<!-- END footer -->
 		</footer>
 		<!-- ***** JAVASCRIPTS ***** -->
 		<script src="assets/plugins/jquery.min.js"></script>
@@ -223,5 +236,14 @@
 		<script src="assets/js/functions.min.js"></script>
 		<script src="assets/js/utils.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			function close_fullscreen_menu(){
+				var menu_btn = document.getElementsByClassName("fullscreen-toggle-btn");
+				menu_btn[0].classList.remove("fullscreen-toggle-hide");
+
+				var menu = document.getElementsByClassName("fullscreen-menu bg-light");
+				menu[0].classList.remove("fullscreen-menu-show");
+			}
+		</script>
 	</body>
 </html>

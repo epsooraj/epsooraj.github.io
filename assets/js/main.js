@@ -4,6 +4,7 @@ var api_base = "https://ep-portfolio-api.herokuapp.com/api/v1/"
 $( document ).ready(function() {
 	set_experience();
 	set_skills();
+	set_portfolio();
 });
 
 function set_experience(){
@@ -63,4 +64,54 @@ function insert_skill(data){
 
 		$("#skill_progress").append(skills_div);
 	});
+}
+
+function set_portfolio(){
+	$.get(api_base + "portfolio/", (data) => {
+
+		// Fetcing unique portfolio type
+		const portfolio_types = [...new Set(data.map(item => item.portfolio_type))];
+
+		// Looping through portfolio type
+		portfolio_types.forEach((portfolio_type, type_index) => {
+			// Filter projects based on type
+			port_data = data.filter((datum) => {
+				return datum.portfolio_type == portfolio_type;
+			});
+
+			// Sorting based on priority
+			port_data = sort_object(port_data, "priority");
+
+			// Add new portfolio type title and masonry section
+			var port_title_sec = '<div class="text-center margin-bottom-30 margin-top-30">';
+			port_title_sec += '<h4>' + portfolio_type + '</h4>';
+			port_title_sec += '</div>';
+
+			port_title_sec += '<div id="portfolio_items_' + type_index + '" class="row">';
+			port_title_sec += '</div>';
+
+			$("#portfolio_main").append(port_title_sec);
+
+			// Loop through port data
+			port_data.forEach((datum, index) => {
+				insert_portfolio(datum, type_index);
+			});
+		});
+
+	});
+}
+
+function insert_portfolio(data, num){
+
+	var port_item = '<div class="col-12 col-md-4">';
+	port_item += '<div class="padding-30 border-all border-radius hover-shadow">';
+	port_item += '<h3 class="font-weight-light text-dark text-center">' + data.title + '</h3>';
+	port_item += '<p class="font-weight-semi-bold text-center">Python, Javascript, PHP</p>';
+	port_item += '<p class="font-weight-semi-bold text-center">Django, Selenium</p>';
+	port_item += '<br>';
+	port_item += '<p class="font-weight-light text-center">' + data.description + '</p>';
+	port_item += '</div>';
+	port_item += '</div>';
+
+	$("#portfolio_items_" + num).append(port_item);
 }
