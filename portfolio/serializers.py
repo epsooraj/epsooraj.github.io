@@ -16,7 +16,7 @@ class SkillSerializer(serializers.ModelSerializer):
 		model = models.Skill
 		fields = ('id', 'skill', 'rating', 'skill_type')
 
-class PortfolioTypeSerializer(serializers.ModelSerializer):
+class PortfolioTypeArraySerializer(serializers.ModelSerializer):
 	def to_representation(self, value):
 		return value.portfolio_type
 
@@ -38,10 +38,15 @@ class TechnologySerializer(serializers.ModelSerializer):
 		model = models.Technology
 
 class PortfolioSerializer(serializers.ModelSerializer):
-	portfolio_type = PortfolioTypeSerializer(many=False, read_only=True)
+	portfolio_type = PortfolioTypeArraySerializer(many=False, read_only=True)
 	languages = LanguageSerializer(many=True, read_only=True)
 	technology = TechnologySerializer(many=True, read_only=True)
 	
 	class Meta:
 		model = models.Portfolio
 		fields = ('id', 'title', 'portfolio_type', 'languages', 'technology', 'description', 'priority')
+
+class PortfolioTypeSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = models.PortfolioType
+		fields = ('portfolio_type', 'priority')

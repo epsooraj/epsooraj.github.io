@@ -32,6 +32,12 @@ class PortfolioAdmin(admin.ModelAdmin):
 
 admin.site.register(models.Portfolio, PortfolioAdmin)
 
+class PortfolioTypeAdmin(admin.ModelAdmin):
+	list_display = ('portfolio_type', 'priority')
+	ordering = ('priority',)
+	search_fields = ('portfolio_type', 'priority')
+
+admin.site.register(models.PortfolioType, PortfolioTypeAdmin)
+
 admin.site.register(models.Language)
 admin.site.register(models.Technology)
-admin.site.register(models.PortfolioType)
