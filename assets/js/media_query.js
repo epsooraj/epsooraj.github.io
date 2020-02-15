@@ -32,6 +32,9 @@ function media_width_min_width_1281px() {
 function media_width_min_width_1025px_max_width_1280px() {
 	$("#contact_icons_left").addClass("text-right");
 	$("#contact_icons_right").addClass("text-left");
+
+	$("#menu_list").addClass("list-horizontal-unstyled");
+	$("#menu_list").removeClass("list-unstyled");
 }
 
 /* 
@@ -52,4 +55,7 @@ function media_width_min_width_768px_and_max_width_1024px() {
 function media_min_width_320px_and_max_width_480px() {
 	$("#contact_icons_left").removeClass("text-right");
 	$("#contact_icons_right").removeClass("text-left");
+
+	$("#menu_list").removeClass("list-horizontal-unstyled");
+	$("#menu_list").addClass("list-unstyled");
 }
