@@ -25,6 +25,9 @@ function set_experience() {
 
 			$("#experience_timeline").append(timeline_div);
 		});
+
+		// Hide Loader
+		$("#experience_loader").hide();
 	});
 }
 
@@ -52,6 +55,9 @@ function set_skills() {
 		tech_data = sort_object(tech_data, "rating", desc = true);
 
 		insert_skill(tech_data);
+
+		// Hide Loader
+		$("#skills_loader").hide();
 	});
 
 }
@@ -103,6 +109,8 @@ function set_portfolio() {
 					insert_portfolio(datum, type_index);
 				});
 
+				// Hide Loader
+				$("#portfolio_loader").hide();
 
 
 			});
@@ -135,6 +143,9 @@ function set_education() {
 		data.forEach((datum, index) => {
 			insert_education(datum)
 		});
+
+		// Hide Loader
+		$("#education_loader").hide();
 
 	});
 }

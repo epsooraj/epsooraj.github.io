@@ -22,9 +22,8 @@
 		<!-- Get hired for freelance -->
 		<!-- <div class="purchasenow">
 			<a class="button-circle button-circle-sm button-circle-dark" href="https://themeforest.net/item/mono-creative-multipurpose-template/21490319" target="_blank"><i class="ti-shopping-cart"></i></a>
-		</div> -->
+			</div> -->
 		<!-- END Get hired for freelance -->
-
 		<header>
 			<nav class="navbar navbar-absolute">
 				<div class="container-fluid">
@@ -33,11 +32,12 @@
 					</a>
 					<!-- Toggle button of Fullscreen menu -->
 					<button class="fullscreen-toggle-btn">
-			            <span class="lines"></span>
-			        </button>
-				</div><!-- end container-fluid -->
-			</nav><!-- end navbar -->
-			
+					<span class="lines"></span>
+					</button>
+				</div>
+				<!-- end container-fluid -->
+			</nav>
+			<!-- end navbar -->
 			<div class="fullscreen-menu bg-light">
 				<div class="fullscreen-menu-wrapper text-center">
 					<div class="position-top">
@@ -45,11 +45,21 @@
 					</div>
 					<div class="position-middle">
 						<ul class="list-horizontal-unstyled">
-							<li><h2><a class="hyperlink-7" href="#experience" onclick="close_fullscreen_menu();">Experience</a></h2></li>
-							<li><h2><a class="hyperlink-7" href="#skills" onclick="close_fullscreen_menu();">Skills</a></h2></li>
-							<li><h2><a class="hyperlink-7" href="#portfolio" onclick="close_fullscreen_menu();">Portfolio</a></h2></li>
-							<li><h2><a class="hyperlink-7" href="#educatoin" onclick="close_fullscreen_menu();">Education</a></h2></li>
-							<li><h2><a class="hyperlink-7" href="#contact" onclick="close_fullscreen_menu();">Contact</a></h2></li>
+							<li>
+								<h2><a class="hyperlink-7" href="#experience" onclick="close_fullscreen_menu();">Experience</a></h2>
+							</li>
+							<li>
+								<h2><a class="hyperlink-7" href="#skills" onclick="close_fullscreen_menu();">Skills</a></h2>
+							</li>
+							<li>
+								<h2><a class="hyperlink-7" href="#portfolio" onclick="close_fullscreen_menu();">Portfolio</a></h2>
+							</li>
+							<li>
+								<h2><a class="hyperlink-7" href="#educatoin" onclick="close_fullscreen_menu();">Education</a></h2>
+							</li>
+							<li>
+								<h2><a class="hyperlink-7" href="#contact" onclick="close_fullscreen_menu();">Contact</a></h2>
+							</li>
 						</ul>
 					</div>
 					<!-- <div class="position-bottom">
@@ -62,38 +72,42 @@
 							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-dark" href="https://facebook.com/epsooraj" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
 							<li><a class="button-circle button-circle-sm button-border-1px button-circle-outline-dark" href="https://instagram.com/ep_sooraj" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
 						</ul>
-					</div> -->
-				</div><!-- end fullscreen-menu-wrapper -->
-			</div><!-- end fullscreen-menu -->
-
-			<!-- Home section -->
-		<div class="section-2xl bg-image parallax" style="background-image: url(assets/images/agency-classic-bg.jpg)">
-			<div class="bg-black-06">
-				<div class="container">
-					<div class="row margin-top-50 margin-bottom-50">
-						<div class="col-12 col-sm-10 offset-sm-1">
-							<h1 class="display-4 font-weight-bold margin-0">Let me bring your <br>Imaginations to Life.</h1>
-						</div>
-					</div>
-					<!-- END row -->
+						</div> -->
 				</div>
-				<!-- END container -->
+				<!-- end fullscreen-menu-wrapper -->
 			</div>
-		</div>
-		<!-- END Home section -->
+			<!-- end fullscreen-menu -->
+			<!-- Home section -->
+			<div class="section-2xl bg-image parallax" style="background-image: url(assets/images/agency-classic-bg.jpg)">
+				<div class="bg-black-06">
+					<div class="container">
+						<div class="row margin-top-50 margin-bottom-50">
+							<div class="col-12 col-sm-10 offset-sm-1">
+								<h1 class="display-4 font-weight-bold margin-0">Let me bring your <br>Imaginations to Life.</h1>
+							</div>
+						</div>
+						<!-- END row -->
+					</div>
+					<!-- END container -->
+				</div>
+			</div>
+			<!-- END Home section -->
 		</header>
-
 		<!-- Scroll to top button -->
 		<div class="scrolltotop">
 			<a class="button-circle button-circle-sm button-circle-dark" href="#"><i class="ti-arrow-up"></i></a>
 		</div>
 		<!-- END Scroll to top button -->
-
 		<!-- Experience Section -->
 		<div id="experience" class="section">
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>I've Been</h2>
+				</div>
+				<div id="experience_loader" class="preloader-1 text-center">
+					<div>
+						<span></span>
+					</div>
 				</div>
 				<div id="experience_timeline" class="timeline-wrapper">
 					<!-- Timeline box 1 -->
@@ -118,6 +132,11 @@
 			<div class="container">
 				<div class="section-title text-center">
 					<h2>I know</h2>
+				</div>
+				<div id="skills_loader" class="preloader-1 text-center">
+					<div>
+						<span></span>
+					</div>
 				</div>
 				<div id="skill_progress" class="row">
 					<!-- <div class="col-12 col-md-6">
@@ -169,15 +188,18 @@
 				<div class="section-title text-center">
 					<h2>What I did</h2>
 				</div>
-
+				<div id="portfolio_loader" class="preloader-1 text-center">
+					<div>
+						<span></span>
+					</div>
+				</div>
 				<div id="portfolio_main">
-
 					<!-- <div class="text-center margin-bottom-30">
 						<h4>Web Based Projects</h4>
-					</div>
-
-					<div id="portfolio_item_" class="row">
-
+						</div>
+						
+						<div id="portfolio_item_" class="row">
+						
 						<div class="col-12 col-md-6">
 							<div class="padding-30 border-all border-radius box-shadow-with-hover hover-scale">
 								<h3 class="font-weight-light text-dark text-center">Scale on Hover</h3>
@@ -187,9 +209,8 @@
 								<p class="font-weight-light text-center">Description ...</p>
 							</div>
 						</div>
-
-					</div> -->
-
+						
+						</div> -->
 				</div>
 				<!-- END row/portfolio-wrapper -->
 			</div>
@@ -202,6 +223,11 @@
 			<div class="container">
 				<div class="section-title text-center">
 					<h2 class="margin-bottom-30">I went to</h2>
+					<div id="education_loader" class="preloader-1 text-center">
+						<div>
+							<span></span>
+						</div>
+					</div>
 					<div id="education_rows">
 						<!-- <div class="row margin-bottom-30">
 							<div class="col-12 col-md-2"></div>
@@ -215,7 +241,7 @@
 								</div>
 							</div>
 							<div class="col-12 col-md-2"></div>
-						</div> -->
+							</div> -->
 					</div>
 				</div>
 			</div>
@@ -230,14 +256,20 @@
 					</div>
 					<div class="row col-spacing-40">
 						<div class="col-12 text-center">
-							<ul class="list-horizontal-unstyled">
-								<li><a href="mailto:epsooraj4@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a></li>
-								<li><a href="https://api.whatsapp.com/sEND?phone=+916282442482" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
-								<li><a href="tel:+916282442482" target="_blank"><i class="fas fa-voicemail fa-lg"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/epsooraj/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-								<li><a href="https://twitter.com/ep_sooraj" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
-								<li><a href="https://facebook.com/epsooraj" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-								<li><a href="https://instagram.com/ep_sooraj" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+							<ul class="list-horizontal-unstyled row">
+								<div id="contact_icons_left" class="col-12 col-md-6 text-right">
+									<li><a href="mailto:epsooraj4@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a></li>
+									<li><a href="https://api.whatsapp.com/sEND?phone=+916282442482" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+									<li><a href="tel:+916282442482" target="_blank"><i class="fas fa-voicemail fa-lg"></i></a></li>
+									<li><a href="https://github.com/epsooraj" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+								</div>
+
+								<div id="contact_icons_right" class="col-12 col-md-6 text-left">
+									<li><a href="https://www.linkedin.com/in/epsooraj/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+									<li><a href="https://twitter.com/ep_sooraj" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://facebook.com/epsooraj" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+									<li><a href="https://instagram.com/ep_sooraj" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+								</div>
 							</ul>
 						</div>
 					</div>
@@ -253,11 +285,12 @@
 		<script src="assets/js/functions.min.js"></script>
 		<script src="assets/js/utils.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/media_query.js"></script>
 		<script type="text/javascript">
 			function close_fullscreen_menu(){
 				var menu_btn = document.getElementsByClassName("fullscreen-toggle-btn");
 				menu_btn[0].classList.remove("fullscreen-toggle-hide");
-
+			
 				var menu = document.getElementsByClassName("fullscreen-menu bg-light");
 				menu[0].classList.remove("fullscreen-menu-show");
 			}
