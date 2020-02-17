@@ -30,3 +30,7 @@ function get_year_month(date){
 
 	return year + " " + months[month];
 }
+
+function is_blank(arr) {
+	return (arr == null || arr == "")
+}

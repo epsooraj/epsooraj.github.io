@@ -91,30 +91,31 @@ function set_portfolio() {
 					return datum.portfolio_type == portfolio_type;
 				});
 
-				// Sorting based on priority
-				port_data = sort_object(port_data, "priority");
+				if (port_data.length > 0){
+					// Sorting based on priority
+					port_data = sort_object(port_data, "priority");
 
-				// Add new portfolio type title and masonry section
-				var port_title_sec = '<div class="text-center margin-bottom-30 margin-top-30">';
-				port_title_sec += '<h4>' + portfolio_type + '</h4>';
-				port_title_sec += '</div>';
+					// Add new portfolio type title and masonry section
+					var port_title_sec = '<div class="text-center margin-bottom-30 margin-top-30">';
+					port_title_sec += '<h4>' + portfolio_type + '</h4>';
+					port_title_sec += '</div>';
 
-				port_title_sec += '<div id="portfolio_items_' + type_index + '" class="row">';
-				port_title_sec += '</div>';
+					port_title_sec += '<div id="portfolio_items_' + type_index + '" class="row">';
+					port_title_sec += '</div>';
 
-				$("#portfolio_main").append(port_title_sec);
+					$("#portfolio_main").append(port_title_sec);
 
-				// Loop through port data
-				port_data.forEach((datum, index) => {
-					insert_portfolio(datum, type_index);
-				});
-
-				// Hide Loader
-				$("#portfolio_loader").hide();
-
+					// Loop through port data
+					port_data.forEach((datum, index) => {
+						insert_portfolio(datum, type_index);
+					});
+				}
 
 			});
 		});
+
+		// Hide Loader
+		$("#portfolio_loader").hide();
 
 	});
 }
@@ -126,6 +127,32 @@ function insert_portfolio(data, num) {
 	port_item += '<h3 class="font-weight-light text-dark text-center">' + data.title + '</h3>';
 	port_item += '<p class="font-weight-semi-bold text-center">' + data.languages.toString().replace(",", ", ") + '</p>';
 	port_item += '<p class="font-weight-semi-bold text-center">' + data.technology.toString().replace(",", ", ") + '</p>';
+
+	var git_col = "";
+	var url_col = "";
+	// Checking if both github link and url are available
+	if (!is_blank(data.github) || !is_blank(data.url)) {
+		git_col = "col-12 text-center";
+		url_col = "col-12 text-center";
+		if (!is_blank(data.github) && !is_blank(data.url)){
+			git_col = "col-6 text-right";
+			url_col = "col-6 text-left";
+
+			port_item += '<br>';
+			port_item += '<div class="row">';
+
+			if (!is_blank(data.github)){
+				port_item += '<div class="col-6 text-right"><a href="' + data.github + '" target="_blank"><i class="fab fa-github fa-lg"></i></a></div>';
+			}
+
+			if (!is_blank(data.url)){
+				port_item += '<div class="col-6"><a href="https://github.com/epsooraj" target="_blank"><i class="fas fa-external-link-alt fa-lg"></i></a></div>';
+			}
+
+			port_item += '</div>';
+		}
+	}
+
 	port_item += '<br>';
 	port_item += '<p class="font-weight-light text-center">' + data.description + '</p>';
 	port_item += '</div>';
