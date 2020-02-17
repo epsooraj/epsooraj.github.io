@@ -65,6 +65,8 @@ class Portfolio(models.Model):
 										on_delete=models.SET_NULL)
 	languages = models.ManyToManyField(Language)
 	technology = models.ManyToManyField(Technology)
+	github = models.CharField(max_length=500, null=True, blank=True)
+	url = models.CharField(max_length=500, null=True, blank=True)
 	description = models.TextField(null=True, blank=True)
 	priority = models.IntegerField(null=True)
 
