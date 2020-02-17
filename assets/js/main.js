@@ -137,20 +137,20 @@ function insert_portfolio(data, num) {
 		if (!is_blank(data.github) && !is_blank(data.url)){
 			git_col = "col-6 text-right";
 			url_col = "col-6 text-left";
-
-			port_item += '<br>';
-			port_item += '<div class="row">';
-
-			if (!is_blank(data.github)){
-				port_item += '<div class="col-6 text-right"><a href="' + data.github + '" target="_blank"><i class="fab fa-github fa-lg"></i></a></div>';
-			}
-
-			if (!is_blank(data.url)){
-				port_item += '<div class="col-6"><a href="https://github.com/epsooraj" target="_blank"><i class="fas fa-external-link-alt fa-lg"></i></a></div>';
-			}
-
-			port_item += '</div>';
 		}
+
+		port_item += '<br>';
+		port_item += '<div class="row">';
+
+		if (!is_blank(data.github)){
+			port_item += '<div class="' + git_col + '"><a href="' + data.github + '" target="_blank"><i class="fab fa-github fa-lg"></i></a></div>';
+		}
+
+		if (!is_blank(data.url)){
+			port_item += '<div class="' + url_col + '"><a href="' + data.url + '" target="_blank"><i class="fas fa-external-link-alt fa-lg"></i></a></div>';
+		}
+
+		port_item += '</div>';
 	}
 
 	port_item += '<br>';
