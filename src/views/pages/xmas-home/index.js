@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './home.css';
+import './xmashome.css';
 
 import NameTitle from '../../../components/nametitle';
 import SeriesSet from '../../../components/series-set';
 
 import Contact from '../../../views/sections/contact-xmas';
 
-class Home extends Component {
+class XmasHome extends Component {
   render() {
     return (
       <React.Fragment>
@@ -18,4 +18,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default XmasHome;
