@@ -27,7 +27,7 @@ class Contact extends Component {
 
           <a
             className='text-white contact-icon whatsapp mrl-10'
-            href='https://api.whatsapp.com/send?phone=+919895985615'
+            href='https://api.whatsapp.com/send?phone=+916282442482'
             target='_blank'
             rel='noopener noreferrer'
           >
