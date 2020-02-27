@@ -1,0 +1,46 @@
+body {
+  /* background-color: #136b99; */
+  background         : rgb(19, 107, 153);
+  background         : -moz-linear-gradient(90deg,
+      rgba(19, 107, 153, 1) 0%,
+      rgba(19, 162, 191, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
+      rgba(19, 107, 153, 1) 0%,
+      rgba(19, 162, 191, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(19, 107, 153, 1) 0%,
+      rgba(19, 162, 191, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#136b99", endColorstr="#13a2bf", GradientType=1);
+  color : #fff;
+}
+
+.display-3 {
+  font-family: 'Snowballs';
+  font-size  : 10em;
+}
+
+.navbar {
+  background-color: white;
+  color           : black !important;
+}
+
+.desc {
+  font-family: SantasSleigh !important;
+  font-size  : 2em !important;
+  font-weight: bold;
+}
+
+.contact-container {
+  position: fixed;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+
+  font-family: SantasSleigh !important;
+  font-size  : 1em !important;
+  font-weight: bold;
+}
+
+.contact-icon {
+  font-size: 1.7em !important;
+}

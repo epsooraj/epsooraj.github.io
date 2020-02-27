@@ -1,0 +1,28 @@
+/* Snowballs Font */
+@font-face {
+  font-family: 'Snowballs';
+  src        : url('Snowballs/Snowballs.ttf');
+}
+
+/* #END Snowballs Font */
+
+
+/* SantasSleigh Font */
+@font-face {
+  font-family: 'SantasSleigh';
+  src        : url('SantasSleigh/SantasSleighFull.ttf');
+}
+
+@font-face {
+  font-family: 'SantasSleigh';
+  src        : url('SantasSleigh/SantasSleighFullBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'SantasSleigh';
+  src        : url('SantasSleigh/SantasSleighFullDeluxe.ttf');
+  font-style : oblique;
+}
+
+/* #END SantasSleigh Font */

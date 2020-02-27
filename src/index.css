@@ -1,13 +1,31 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700|Space+Mono&display=swap');
+
+@font-face {
+  font-family: 'Great Vibes';
+  font-style : normal;
+  font-weight: 400;
+  src        : local('Great Vibes'), local('GreatVibes-Regular'),
+    url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XFiaE.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin                 : 0px;
+  padding                : 0px;
+  overflow-x             : hidden;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mrl-10 {
+  margin-left : 10px;
+  margin-right: 10px;
 }

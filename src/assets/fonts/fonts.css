@@ -1,0 +1,85 @@
+/* Karla Font */
+@font-face {
+  font-family: 'Karla';
+  src        : url('Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Karla';
+  src        : url('Karla/Karla-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src        : url('Karla/Karla-Italic.ttf');
+  font-style : italic;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src        : url('Karla/Karla-BoldItalic.ttf');
+  font-weight: bold;
+  font-style : italic;
+}
+
+/* #END Karla Font */
+
+/* Rubik Font */
+
+/* Regular */
+@font-face {
+  font-family: 'Rubik Regular';
+  src        : url('Rubik/Regular/Rubik-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src        : url('Rubik/Regular/Rubik-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src        : url('Rubik/Regular/Rubik-Italic.ttf');
+  font-style : italic;
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src        : url('Rubik/Regular/Rubik-BoldItalic.ttf');
+  font-weight: bold;
+  font-style : italic;
+}
+
+/* #END Regular */
+
+/* Black */
+@font-face {
+  font-family: 'Rubik Black';
+  src        : url('Rubik/Black/Rubik-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik Black';
+  src        : url('Rubik/Black/Rubik-BlackItalic.ttf');
+  font-style : italic;
+}
+
+/* #END Black */
+
+/* Light */
+@font-face {
+  font-family: 'RubiK Light';
+  src        : url('Rubik/Light/Rubik-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik Light';
+  src        : url('Rubik/Light/Rubik-LightItalic.ttf');
+  font-style : italic;
+}
+
+/* #END Light */
+
+/* #END Rubik Font */
