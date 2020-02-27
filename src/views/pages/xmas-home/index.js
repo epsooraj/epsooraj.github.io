@@ -9,11 +9,11 @@ import Contact from '../../../views/sections/contact-xmas';
 class XmasHome extends Component {
   render() {
     return (
-      <React.Fragment>
-        <SeriesSet />
-        <NameTitle />
-        <Contact />
-      </React.Fragment>
+      	<div className="xmasdiv">
+        	<SeriesSet />
+        	<NameTitle />
+        	<Contact />
+        </div>
     );
   }
 }
