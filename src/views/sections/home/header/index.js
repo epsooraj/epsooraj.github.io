@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './header.css';
 import AgencyClassicBg from '../../../../assets/images/twilight.jpg';
 
-import {Navbar} from 'react-bootstrap';
+import {Navbar, Row, Col} from 'react-bootstrap';
 
 class Header extends Component {
 	render() {
@@ -29,12 +29,16 @@ class Header extends Component {
   					</Navbar.Collapse>
 				</Navbar>
 
-				<div className="main-desc-div">
-					<h1 className="main-desc text-white">
-						Let me bring your<br />
-						Imaginations to Life.
-					</h1>
-				</div>
+				<Row className="main-desc-div">
+					<Col md={3} sm={12}></Col>
+					<Col md={6} sm={12}>
+						<h1 className="main-desc text-white">
+							Let me bring your<br />
+							Imaginations to Life.
+						</h1>
+					</Col>
+					<Col md={3} sm={12}></Col>
+				</Row>
 			</header>
 		);
 	}
