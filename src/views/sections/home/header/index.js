@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './header.css';
-import AgencyClassicBg from '../../../../assets/images/agency-classic-bg.jpg';
+import AgencyClassicBg from '../../../../assets/images/twilight.jpg';
 
 import {Navbar} from 'react-bootstrap';
 
@@ -29,7 +29,7 @@ class Header extends Component {
   					</Navbar.Collapse>
 				</Navbar>
 
-				<div>
+				<div className="main-desc-div">
 					<h1 className="main-desc text-white">
 						Let me bring your<br />
 						Imaginations to Life.
