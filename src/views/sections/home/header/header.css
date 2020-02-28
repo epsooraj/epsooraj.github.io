@@ -1,0 +1,27 @@
+.header {
+	width: 100%;
+	height: 90vh;
+}
+
+.header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 90vh;
+}
+
+.navbrand {
+	font-family: 'Poppins';
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.main-desc {
+	font-family: 'Poppins';
+	font-size: 56px;
+	font-weight: 600;
+	position: absolute;
+}

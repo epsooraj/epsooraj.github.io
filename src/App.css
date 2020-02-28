@@ -6,3 +6,14 @@
 .center {
   text-align: center;
 }
+
+.noshadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.mrl-10 {
+  margin-left : 10px;
+  margin-right: 10px;
+}
