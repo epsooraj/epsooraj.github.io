@@ -4,7 +4,7 @@ import './xmashome.css';
 import NameTitle from '../../../components/nametitle';
 import SeriesSet from '../../../components/series-set';
 
-import Contact from '../../../views/sections/contact-xmas';
+import Contact from '../../../views/sections/xmas/contact';
 
 class XmasHome extends Component {
   render() {
