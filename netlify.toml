@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "https://fournotfour.netlify.com"
+  status = 404
