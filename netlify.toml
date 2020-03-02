@@ -2,4 +2,8 @@
   from = "/*"
   to = "/404/index.html"
   status = 404
-  #force = true
+
+[[redirects]]
+  from = "/test"
+  to = "https://google.com"
+  status = 200
