@@ -1,6 +1,6 @@
 # Ep Sooraj Portfolio API
 
-[![Heroku](https://heroku-badge.herokuapp.com/?app=ep-portfolio-api)]
+[!Heroku](https://heroku-badge.herokuapp.com/?app=ep-portfolio-api)
 
 API built with django rest framework and postgres
 
