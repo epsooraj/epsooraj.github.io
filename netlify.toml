@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://fournotfour.netlify.com"
+  to = "/404/index.html"
   status = 404
   #force = true
