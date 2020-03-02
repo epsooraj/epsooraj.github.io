@@ -22,7 +22,7 @@ Application is hosted in [Heroku](https://heroku.com/)
 
 Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 
-## Framework Used
+## Frameworks Used
 
 [Django](https://www.djangoproject.com/)
 
