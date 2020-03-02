@@ -3,4 +3,3 @@
   to = "https://fournotfour.netlify.com"
   status = 404
   force = true
-  headers = {X-From = "Netlify"}
