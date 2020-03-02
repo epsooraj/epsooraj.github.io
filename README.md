@@ -2,7 +2,7 @@
 
 [![Heroku](http://heroku-badge.herokuapp.com/?app=ep-portfolio-api&style=flat)]()
 
-API built with django rest framework and postgres
+API built using [Django](https://www.djangoproject.com/) [Django Rest Framework](https://www.django-rest-framework.org/) and [PostgreSQL](https://www.postgresql.org/).
 
 ### API Functionality
 Serves json data of
@@ -20,7 +20,7 @@ Database is hosted using [Heroku Postgres](https://www.heroku.com/postgres)
 ## API Link
 ### https://ep-portfolio-api.herokuapp.com/api/v1/
 
-## Technology
+## Framework Used
 
 [Django](https://www.djangoproject.com/)
 
