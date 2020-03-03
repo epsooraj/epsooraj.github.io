@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/test"
-  to = "https://google.com"
+  to = "/indexBk.html"
   status = 200
   force = true
 
