@@ -45,9 +45,20 @@
 	</head>
 	<body data-preloader="2">
 		<!-- Get hired for freelance -->
-		<!-- <div class="purchasenow">
-					<a class="button-circle button-circle-sm button-circle-dark" href="https://themeforest.net/item/mono-creative-multipurpose-template/21490319" target="_blank"><i class="ti-shopping-cart"></i></a>
-		</div> -->
+		<div class="purchasenow">
+			<!-- <a class="button-circle button-circle-lg button-circle-dark"
+				href="https://docs.google.com/document/d/1y6LIr8MN2San78HBqm6o4Tg2QEm5MwsL-T9eSZXNXBg/export?format=pdf"
+				download="EpSooraj-Resume.pdf"
+				>
+				<i class="fas fa-download fa-lg"></i>
+			</a> -->
+			<a class="button-circle button-circle-lg button-circle-dark"
+				href="#"
+				onclick="downloadResume();" 
+				>
+				<i class="fas fa-download fa-lg"></i>
+			</a>
+		</div>
 		<!-- END Get hired for freelance -->
 		<header>
 			<nav class="navbar navbar-absolute">
@@ -57,7 +68,7 @@
 					</a>
 					<!-- Toggle button of Fullscreen menu -->
 					<button name="fullscreen-toggle" class="fullscreen-toggle-btn">
-					<span class="lines"></span>
+						<span class="lines"></span>
 					</button>
 				</div>
 				<!-- end container-fluid -->
@@ -310,6 +321,16 @@
 		</div>
 		<!-- END footer -->
 	</footer>
+
+	<div id="resume_loader" class="text-center" style="width:100%; position: fixed; bottom: 100px; display: none;">
+		<div class="preloader-1 text-center">
+			<div>
+				<span></span>
+			</div>
+		</div>
+
+	</div>
+
 	<!-- ***** JAVASCRIPTS ***** -->
 	<script src="assets/plugins/jquery.min.js"></script>
 	<script src="assets/plugins/plugins.js"></script>
@@ -324,6 +345,27 @@
 		
 			var menu = document.getElementsByClassName("fullscreen-menu bg-light");
 			menu[0].classList.remove("fullscreen-menu-show");
+		}
+
+		function downloadResume(){
+			$("#resume_loader").show();
+			fetch("https://docs.google.com/document/d/1y6LIr8MN2San78HBqm6o4Tg2QEm5MwsL-T9eSZXNXBg/export?format=pdf")
+  				.then(resp => resp.blob())
+  				.then(blob => {
+    				const url = window.URL.createObjectURL(blob);
+    				const a = document.createElement('a');
+    				a.style.display = 'none';
+    				a.href = url;
+    				a.download = 'EpSooraj-Resume.pdf';
+   					document.body.appendChild(a);
+   					a.click();
+  					window.URL.revokeObjectURL(url);
+    				$("#resume_loader").hide();
+  				})
+  				.catch(() => {
+  					$("#resume_loader").show();
+  					alert('Downloading Failed.')
+  				});
 		}
 	</script>
 </body>
