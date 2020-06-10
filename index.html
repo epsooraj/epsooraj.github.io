@@ -54,7 +54,7 @@
 			</a> -->
 			<a class="button-circle button-circle-lg button-circle-dark"
 				href="#"
-				onclick="downloadResume();" 
+				onclick="downloadResume();"
 				>
 				<i class="fas fa-download fa-lg"></i>
 			</a>
@@ -65,6 +65,7 @@
 				<div class="container-fluid">
 					<a class="navbar-brand" href="/">
 						<h5>Ep Sooraj</h5>
+						<p style="font-size: 1rem;">Backend Engineer</p>
 					</a>
 					<!-- Toggle button of Fullscreen menu -->
 					<button name="fullscreen-toggle" class="fullscreen-toggle-btn">
@@ -201,20 +202,21 @@
 			</div>
 			<div class="row process-wrapper">
 				<!-- Process item 1 -->
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-12">
 					<h2 class="font-weight-light text-dark text-center">Web Development</h2>
 					<p class="text-center">
-						Expert with Python Django and ReactJS.
+						Expert with Python-Django and ReactJS.
+						<br />
+						Linux Server Administration and Database management.
 					</p>
 				</div>
 				<!-- Process item 2 -->
-				<div class="col-12 col-md-6">
+				<!-- <div class="col-12 col-md-6">
 					<h2 class="font-weight-light text-dark text-center">Machine Learning</h2>
 					<p class="text-center">
 						Intermediate with Tensorflow and Keras
 					</p>
-				</div>
-				<!-- Process item 3 -->
+				</div> -->
 			</div>
 			<!-- END row -->
 		</div>
@@ -342,7 +344,7 @@
 		function close_fullscreen_menu(){
 			var menu_btn = document.getElementsByClassName("fullscreen-toggle-btn");
 			menu_btn[0].classList.remove("fullscreen-toggle-hide");
-		
+
 			var menu = document.getElementsByClassName("fullscreen-menu bg-light");
 			menu[0].classList.remove("fullscreen-menu-show");
 		}
